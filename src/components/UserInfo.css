@@ -1,0 +1,49 @@
+.user-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+
+.user-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #1e293b;
+}
+
+.user-card {
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.user-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-row:last-child {
+  border-bottom: none;
+}
+
+.user-row span {
+  font-weight: 600;
+  color: #475569;
+}
+
+.user-row p {
+  font-size: 15px;
+  color: #0f172a;
+}
+
+.role {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
