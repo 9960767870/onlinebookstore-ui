@@ -15,8 +15,7 @@ function Login({ onLoginSuccess }) {
     try {
       const res = await login({
         userName:userName,   // 🔥 backend usually expects "username"
-        password,
-        email,
+        password
       });
 
       localStorage.setItem("token", res.token);
@@ -36,7 +35,7 @@ function Login({ onLoginSuccess }) {
 
         <input
           type="userName"
-          placeholder="Username"
+          placeholder="Username Or Email"
           required
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
@@ -49,14 +48,14 @@ function Login({ onLoginSuccess }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-
+{/* 
         <input
           type="email"
           placeholder="Email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        />
+        /> */}
 
         <button type="submit">Login</button>
       </form>
